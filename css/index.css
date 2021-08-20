@@ -1,0 +1,63 @@
+/* Main content */
+
+main {
+    display: block;
+    margin: 0 auto;
+}
+
+.oslo {
+    background-image: url(../images/oslo.jpg);
+    background-size: 100% 120%;
+}
+
+.tromso {
+    background-image: url(../images/tromso-beach.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.hammerfest {
+    background-image: url(../images/hammerfest-snowman-cropped.jpg);
+    background-size: 100% 125%;
+    background-repeat: no-repeat;
+}
+
+.oslo,
+.tromso,
+.hammerfest {
+    display: grid;
+    grid-template-columns: 10% auto 10%;
+    grid-template-rows: 15% auto 25%;
+    max-width: 600px;
+    height: 300px;
+    margin: 10px;
+    border-radius: 6px;
+}
+
+.card-info {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    max-width: 100%;
+    height: auto;
+    background-color: rgb(208, 236, 222, 0.8);
+    padding: 0px 10px;
+    border-radius: 6px;
+    margin: 0 auto;
+    font-weight: 600;
+    -webkit-box-shadow: 1px 1px 29px 1px rgba(82,57,77,0.52);
+    -moz-box-shadow: 1px 1px 29px 1px rgba(82,57,77,0.52);
+    box-shadow: 1px 1px 29px 1px rgba(82,57,77,0.52);
+    }
+
+.card-info h2 {
+    text-align: center;
+    font-family: 'Windsong', cursive;
+    margin: 10px 0 0 0;
+}
+
+.card-info:hover {
+    -webkit-box-shadow: 2px -1px 38px 6px rgba(82,57,77,0.52);
+    -moz-box-shadow: 2px -1px 38px 6px rgba(82,57,77,0.52);
+    box-shadow: 2px -1px 38px 6px rgba(82,57,77,0.52);
+    transform: scale(1.1);
+}

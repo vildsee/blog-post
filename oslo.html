@@ -3,43 +3,79 @@
     <head>
         <meta charset="utf-8" />
         <title>Discovering Land of the Midnight Sun</title>
-        <link rel="stylesheet" href="css/oslo.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/blog-post.css">
+        <link href="https://fonts.googleapis.com/css2?family=WindSong&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@100&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/e544cea426.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header>
-            <h1>Discovering Land of the Midnight Sun</h1>
-        </header>
         <!-- Container for content -->
-        <div class="container">
+        <div class="container-blog">
+            <header class="page-header">
+                <h1>Discovering Land of the Midnight Sun</h1>
+            </header>
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Navbar -->
+                <nav class="navbar">
+                    <div class="home">
+                        <a href="index.html"><i class="fas fa-home">Home</i></a>
+                    </div>
+                    <div class="post">
+                        <a href="#"><i class="fas fa-feather-alt">Blog</i></a>
+                    </div>
+                </nav>
+                <!-- Search -->
+                <form class="searchbar">
+                    <input type="search" placeholder="Search the blog" aria-label="Search the blog">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
             <!-- Blog post -->
-            <article>
-                <h2>Oslo and it's amazing surroundings</h2>
-                <p>There is lot to discover in Oslo and around. In this post I am focusing more on the surroundings of Oslo, but I would like to reccomend visiting <em>Norsk Folkemuseum</em> in Oslo. It's an open air museum with different buildings, houses etc from different eras of Norway. There is also one wooden church <em>Gol Stavekirke</em> which looks amazing and smells good! :D </p>
-                <figure>
-                    <img src="images/old-gasstation.jpg" width="350px" alt="Old gas station in Norsk Folkemuseum">
-                    <figcaption>Old gas-station in Norsk Folkemuseum</figcaption>
-                    <img src="images/stavekirke.jpg" width="350px" alt="Gol wooden church">
-                    <figcaption>Gol stavekirke in Norsk Folkemuseum</figcaption>
-                </figure>
-                <p>In and around Oslo there are a lot of amazing hiking trails! Norway has a freedom to roam law <em>allemannsrett</em> which means that everyone can enjoy the right of access to, and passage trough, uncultivated land in the countryside.</p>
-                <figure>
-                    <img src="images/mountaintop-lillestrom.jpg" width="350px" alt="View from the mountain to Stampetjernet lake">
-                    <figcaption>Hiking trail looking over Stampetjernet lake in Lillestrøm</figcaption>
-                    <img src="images/mushoom.jpg" width="350px" alt="Mushroom in Flateby">
-                    <figcaption>Mushroom in Flateby</figcaption>
-                    <img src="images/icey-rocks.jpg" width="350px" alt="Snow covered rocks">
-                    <figcaption>Snowy rocks</figcaption>
-                    <img src="images/fog.jpg" alt="Foggy lake">
-                    <figcaption>Foggy lake near Gardemoen</figcaption>
-                </figure>
-            </article>
+            <main>
+                <article>
+                    <h2>Oslo and it's amazing surroundings</h2>
+                    <time datetime="2021-08-06T19:52">August 2021</time><br>
+                    <p>There is lot to discover in Oslo and around. In this post I am focusing more on the surroundings of Oslo, but I would like to reccomend visiting <em>Norsk Folkemuseum</em> in Oslo. It's an open air museum with different buildings, houses etc from different eras of Norway. There is also one wooden church <em>Gol Stavekirke</em> which looks amazing and smells good!</p>
+                    <div class="pics1">
+                        <figure id="pic1">
+                            <img src="images/old-gasstation.jpg" alt="Old gas station in Norsk Folkemuseum">
+                        <figcaption>Old gas-station in Norsk Folkemuseum</figcaption>
+                        </figure>
+                        <figure id="pic2">
+                            <img src="images/fog.jpg" alt="Foggy lake">
+                            <figcaption>Foggy lake near Gardemoen</figcaption>
+                        </figure>
+                    </div>
+                    <p>In and around Oslo there are a lot of amazing hiking trails! Norway has a freedom to roam law <em>allemannsrett</em> which means that everyone can enjoy the right of access to, and passage trough, uncultivated land in the countryside.</p>
+                    <div class="pics2">
+                        <figure id="pic3">
+                            <img src="images/mountaintop-lillestrom.jpg" width="350px" alt="View from the mountain to Stampetjernet lake">
+                            <figcaption>View Stampetjernet lake in Lillestrøm</figcaption>
+                        </figure>
+                        <figure id="pic4">
+                            <img src="images/stavekirke.jpg" alt="Gol wooden church">
+                            <figcaption>Gol stavekirke in Norsk Folkemuseum</figcaption>                            
+                        </figure>
+                        <figure id="pic5">
+                            <img src="images/icey-rocks.jpg" alt="Snow covered rocks">
+                            <figcaption>Snowy rocks</figcaption>
+                        </figure>
+                        <figure id="pic6">
+                            <img src="images/mushoom.jpg" alt="Mushroom in Flateby">
+                            <figcaption>Mushroom in Flateby</figcaption>
+                        </figure>
+                    </div>
+                </article>
+            </main>
             <!-- Buttons for previous/new post -->
             <div class="previousnext">
                 <a href="tromso.html">Previous post</a>
                 <a href="#">Next post</a>
-            </div>
+            </div>            
             <!-- Sidebar -->
-            <div class="sidebar">
+            <div class="infobar">
                 <!-- About me -->
                 <div class="about">
                     <h3>About the creator</h3>
@@ -51,6 +87,7 @@
                     </ul>
                     <p>Estonian living in Norway. I love travelling around and taking pictures of our amazing nature. Free spirit and introvert who cant stay in one place for too long.</p>
                 </div>
+                <hr>
                 <!-- Archive -->
                 <div class="archive">
                     <h3>Archive</h3>
@@ -58,31 +95,33 @@
                     <a href="tromso.html">2020</a>
                     <a href="hammerfest.html">2019</a>
                 </div>
+                <hr>
                 <!-- Subscribe -->
-                <div class="subrscribe">
-                    <h3>Want to keep up?</h3>
-                    <p>Get an email when I make a new post!</p>
-                    <form action="">
+                <form action="">
+                    <div class="subscribe">
+                        <h3>Want to keep up?</h3>
+                        <p>Get an email when I make a new post!</p>                    
                         <input type="text" name="email" class="formStyle" placeholder="Email">
-                        <a href="#" class="formbutton">Subscribe</a>
-                    </form>
-                </div>
+                        <button type="submit" class="subsbtn">Subscribe</button>
+                    </div>
+                </form>
+                <hr>
                 <!-- Social media -->
                 <div class="social">
                     <h3>Find me on:</h3>
                     <ul>
-                        <li><a href="#"><img src="images/facebook.png" width="12px" alt="Facebook logo">Facebook</a></li>
-                        <li><a href="#"><img src="images/twitter.png" width="12px" alt="Twitter logo">Twitter</a></li>
-                        <li><a href="#"><img src="images/linkedin.png" width="12px" alt="LinkedIn logo">LinkedIn</a></li>
-                        <li><a href="https://www.instagram.com/vildsee/"><img src="images/instagram.png" width="12px" alt="Instagram logo">Instagram</a></li>
+                        <li><a href="#"><i class="fab fa-facebook-f">&nbspFacebook</i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter">&nbspTwitter</i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in">&nbspLinkedIn</i></a></li>
+                        <li><a href="https://www.instagram.com/vildsee/"><i class="fab fa-instagram">&nbspInstagram</i></a></li>
                     </ul>
                 </div>
-
-
             </div>
         </div>
+        <!-- Footer -->
         <footer>
-            Discovered by Vildsee
+            <hr>
+            <span>Discovered by Vildsee &#9829;</span>
         </footer>
     </body>
 </html>

@@ -1,0 +1,116 @@
+@import "media.css";
+
+body {
+    background-color: rgb(246, 245, 243);
+    max-width: 900px;
+    margin: auto;
+    font-family: 'Hahmlet', serif;
+    color: rgb(42, 61, 69);
+}
+
+header {
+    background-image: url(../images/houses.jpg);
+    opacity: 0.8;
+    height: 250px;
+    color: rgb(42, 61, 69);
+    text-align: center;
+    font-family: 'Windsong', cursive;
+    font-size: 20px;
+}
+
+footer {
+    background-color: rgb(249, 242, 241);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer hr {
+    width: 80%;
+    height: 2px;
+    background-color: #2a3d45;
+}
+
+footer span {
+    font-size: 20px;
+    font-family: 'Windsong', cursive;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(42, 61, 69);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    background-color: rgb(249, 242, 241);
+}
+
+.page-header h1 {
+    margin-top: 5px;
+}
+
+/* Menu bar */
+
+.sidebar {
+    background-color: rgb(243, 228, 226);
+    padding: 5px 5px;
+}
+
+.navbar {
+    display: flex;
+}
+
+.home,
+.post {
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin-right: 5px;
+}
+
+.home a:hover,
+.post a:hover {
+    color: rgb(195, 121, 111);
+}
+
+/* Search */
+
+.searchbar {
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    border-radius: 4px;
+    display: flex;
+    z-index: 0;
+}
+ 
+.searchbar input {
+    width: 90%;
+    background-color: white;
+    border: none;
+    font-size: 12px;
+    color: rgb(42, 61, 69,0.8);
+    border-radius: 4px;
+}
+
+.searchbar input::placeholder {
+    padding-left: 5px;
+}
+
+.searchbar button {
+    background-color: rgb(246, 245, 243);
+    color: rgb(42, 61, 69,0.8);
+    border: none;
+    font-size: 20px;
+    margin: 0px 0px 0px -5px;
+    border-radius: 4px;
+}
+
+.searchbar button:hover {
+    cursor: pointer;
+}

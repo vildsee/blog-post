@@ -1,0 +1,180 @@
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h2,
+article {
+    text-align: center;
+}
+
+figure {
+    border: 1px solid rgb(42, 61, 69);
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+    max-width: 320px;
+    margin: 0px;
+}
+
+time {
+    float: right;
+    font-size: 11px;
+    padding-right: 5px;
+}
+
+p {
+    max-width: 500px;
+    margin: auto;
+}
+
+/* Pictures */
+
+.pics1,
+.pics2,
+.pics5,
+.pics6 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(15px, auto);
+    gap: 10px 10px;
+    height: 100%;
+    align-items: center;
+    margin: 15px 10px;
+}
+
+.pics3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+    align-items: center;
+}
+
+.pics3-1,
+.pics3-2 {
+    margin: 15px 10px;
+}
+
+#pic7 {
+    margin-right: -5px;
+}
+
+#pic9 {
+    margin-top: 15px;
+}
+
+.pics4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(15px, auto);
+    gap: 10px 10px;
+    height: 100%;
+    align-items: center;
+    margin: 15px 10px;
+}
+
+#pic10 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#pic11 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+#pic12 {
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+/* Previous and next button */
+
+.previousnext a {
+    border: 1px solid rgb(42, 61, 69);
+    border-radius: 6px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.previousnext a:hover {
+    background-color: rgb(243, 228, 226);
+    text-decoration: none;
+}
+
+.previousnext {
+    display: inline-flex;
+    justify-content: space-between;
+    margin: 10px 15px;
+}
+
+/* infobar */
+
+.infobar {
+    background-color: rgb(243, 228, 226);
+    display: grid;
+    width: 100%;
+
+}
+
+.about {
+    text-align: center;
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+.about img {
+    border-radius: 10px;
+}
+
+.about ul,
+.social ul {
+    list-style-type: none;
+    font-style: italic;
+}
+
+.archive {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.archive a {
+    padding: 0px 10px;
+}
+
+.subscribe {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.subscribe input {
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid rgb(42, 61, 69);
+}
+
+.subsbtn {
+    border: 1px solid rgb(42, 61, 69,0.8);
+    border-radius: 4px;
+    background-color: rgb(243, 228, 226);
+    padding: 5px;
+}
+
+.subscribe button:hover {
+    background-color: rgb(249, 242, 241);
+    cursor: pointer;
+}
+
+.social {
+    text-align: center;
+}
+
+hr {
+    width: 40%;
+    height: 2px;
+    background-color: rgb(42, 61, 69);
+    border: none;
+    margin: 15px auto;
+}
+

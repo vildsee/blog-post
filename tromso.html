@@ -3,34 +3,68 @@
     <head>
         <meta charset="utf-8" />
         <title>Discovering Land of the Midnight Sun</title>
-        <link rel="stylesheet" href="css/oslo.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/blog-post.css">
+        <link href="https://fonts.googleapis.com/css2?family=WindSong&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@100&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/e544cea426.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header>
-            <h1>Discovering Land of the Midnight Sun</h1>
-        </header>
         <!-- Container for content -->
-        <div class="container">
+        <div class="container-blog">
+            <header class="page-header">
+                <h1>Discovering Land of the Midnight Sun</h1>
+            </header>
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Navbar -->
+                <nav class="navbar">
+                    <div class="home">
+                        <a href="index.html"><i class="fas fa-home">Home</i></a>
+                    </div>
+                    <div class="post">
+                        <a href="#"><i class="fas fa-feather-alt">Blog</i></a>
+                    </div>
+                </nav>
+                <!-- Search -->
+                <form class="searchbar">
+                    <input type="search" placeholder="Search the blog" aria-label="Search the blog">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
             <!-- Blog post -->
-            <article>
-                <h2>Tromsø - the Capital of the Arctic</h2>
-                <p>Tromsø is the biggest city in Norway that is located above the Arctic circle with about 65 000 people. When in Tromsø one should definetly visit the beautiful Telegrafbukta beach, you can't miss the Arctic Church and behind the church is a zip line you can take! The nature around is powerful and magical! Keep your eyes open when walking around in the city as it is filled with beautiful wall art!</p>
-                <figure>
-                    <img src="images/telegrafbukta.jpg" width="350px" alt="Sunset at Telegrafbukta beach">
-                    <figcaption>Sunset at Telegrafbukta</figcaption>
-                    <img src="images/old-port.jpg" width="350px" alt="Old dock on the way to Tromso">
-                    <figcaption>Old dock on the way to Tromsø</figcaption>
-                    <img src="images/arctic-church.jpg" width="350px" alt="Tromsø Arctic Church">
-                    <figcaption>Arctic Church</figcaption>
-                </figure>
+            <main>        
+                <article>
+                    <h2>Tromsø - the Capital of the Arctic</h2>
+                    <time datetime="2021-08-06T19:52">August 2021</time><br>
+                    <p>Tromsø is the biggest city in Norway that is located above the Arctic circle with about 65 000 people. When in Tromsø one should definetly visit the beautiful Telegrafbukta beach, you can't miss the Arctic Church and behind the church is a zip line you can take! The nature around is powerful and magical! Keep your eyes open when walking around in the city as it is filled with beautiful wall art!</p>
+                    <div class="pics3">
+                        <div class="pics3-1">
+                            <figure id="pic7">
+                                <img src="images/arctic-church.jpg" alt="Tromsø Arctic Church">
+                                <figcaption>Arctic Church</figcaption>
+                            </figure>
+                        </div>
+                        <div class="pics3-2">
+                            <figure id="pic8">
+                                <img src="images/telegrafbukta.jpg" alt="Sunset at Telegrafbukta beach">
+                                <figcaption>Sunset at Telegrafbukta</figcaption>
+                            </figure>
+                            <figure id="pic9">
+                                <img src="images/old-port.jpg" alt="Old dock on the way to Tromso">
+                                <figcaption>Old dock on the way to Tromsø</figcaption>
+                            </figure>
+                        </div>
+                    </div>
             </article>
+            </main>
             <!-- Buttons for previous/new post -->
             <div class="previousnext">
                 <a href="hammerfest.html">Previous post</a>
                 <a href="oslo.html">Next post</a>
             </div>
             <!-- Sidebar -->
-            <div class="sidebar">
+            <div class="infobar">
                 <!-- About me -->
                 <div class="about">
                     <h3>About the creator</h3>
@@ -42,6 +76,7 @@
                     </ul>
                     <p>Estonian living in Norway. I love travelling around and taking pictures of our amazing nature. Free spirit and introvert who cant stay in one place for too long.</p>
                 </div>
+                <hr>
                 <!-- Archive -->
                 <div class="archive">
                     <h3>Archive</h3>
@@ -49,15 +84,17 @@
                     <a href="tromso.html">2020</a>
                     <a href="hammerfest.html">2019</a>
                 </div>
+                <hr>
                 <!-- Subscribe -->
-                <div class="subrscribe">
-                    <h3>Want to keep up?</h3>
-                    <p>Get an email when I make a new post!</p>
-                    <form action="">
+                <form action="">
+                    <div class="subscribe">
+                        <h3>Want to keep up?</h3>
+                        <p>Get an email when I make a new post!</p>
                         <input type="text" name="email" class="formStyle" placeholder="Email">
-                        <a href="#" class="formbutton">Subscribe</a>
-                    </form>
-                </div>
+                        <button type="submit" class="subsbtn">Subscribe</button>
+                    </div>
+                </form>                
+                <hr>
                 <!-- Social media -->
                 <div class="social">
                     <h3>Find me on:</h3>
@@ -68,12 +105,12 @@
                         <li><a href="https://www.instagram.com/vildsee/"><img src="images/instagram.png" width="12px" alt="Instagram logo">Instagram</a></li>
                     </ul>
                 </div>
-
-
             </div>
         </div>
+        <!-- Footer -->
         <footer>
-            Discovered by Vildsee
+            <hr>
+            <span>Discovered by Vildsee &#9829;</span>
         </footer>
     </body>
 </html>
