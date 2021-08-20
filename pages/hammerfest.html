@@ -3,8 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <title>Discovering Land of the Midnight Sun</title>
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/blog-post.css">
+        <link rel="stylesheet" href="../css/style.css">
         <link href="https://fonts.googleapis.com/css2?family=WindSong&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@100&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/e544cea426.js" crossorigin="anonymous"></script>
@@ -20,7 +19,7 @@
                 <!-- Navbar -->
                 <nav class="navbar">
                     <div class="home">
-                        <a href="index.html"><i class="fas fa-home">Home</i></a>
+                        <a href="../index.html"><i class="fas fa-home">Home</i></a>
                     </div>
                     <div class="post">
                         <a href="#"><i class="fas fa-feather-alt">Blog</i></a>
@@ -28,8 +27,8 @@
                 </nav>
                 <!-- Search -->
                 <form class="searchbar">
-                    <input type="search" placeholder="Search the blog" aria-label="Search the blog">
-                    <button type="submit"><i class="fas fa-search"></i></button>
+                    <input class="search" type="search" placeholder="Search the blog" aria-label="Search the blog">
+                    <button class="submit" type="submit"><i class="fas fa-search"></i></button>
                 </form>
             </div>
             <!-- Blog post -->
@@ -39,37 +38,37 @@
                     <p>Hammerfest is a small 10 000 people town in the island of Kvaløya. The city itself is charming and locals are friendly. If you're into cuisine there are quite a few good restaurants where one can get the taste experienses starting with reindeer burgers and ending with whale sushi! When landscape and hiking is more to your liking you're in for a treat! Hammerfest is built around a bay in the foot of the surrounding mountains which means that from the city center you can take a walk on the old zig-zag road up to the mountain to enjoy some amazing views and northen lights!</p>
                     <div class="pics4">
                         <figure id="pic10">
-                            <img src="images/hammerfest-aurora.jpg" alt="View over Hammerfest with northen lights">
+                            <img src="../images/hammerfest-aurora.jpg" alt="View over Hammerfest with northen lights">
                             <figcaption>Northen lights over Hammerfest</figcaption>
                         </figure>  
                         <figure id="pic11">
-                            <img src="images/hammerfest-cabin.jpg" alt="Cabin on a mountain in Hammerfest">
+                            <img src="../images/hammerfest-cabin.jpg" alt="Cabin on a mountain in Hammerfest">
                             <figcaption>Cabin on a mountain in Hammerfest</figcaption>
                         </figure>
                         <figure id="pic12">
-                            <img src="images/salen-night.jpg" alt="Hammerfest at night">
+                            <img src="../images/salen-night.jpg" alt="Hammerfest at night">
                             <figcaption>Hammerfest at night</figcaption>
                         </figure>
                     </div>
                     <p>In the summer you need to be careful when driving around as there are a lot of reindeer roaming around and they are not in a hurry to get out of the way from a car! I have been stuck behind them quite a few times because they don't have a care in the world walking in the middle of the road! :D</p>
                     <div class="pics5">  
                         <figure id="pic13">
-                            <img src="images/reindeer.jpg" alt="Reindeer in Hammerfest">
+                            <img src="../images/reindeer.jpg" alt="Reindeer in Hammerfest">
                             <figcaption>Reindeer showing off its antlers</figcaption>
                         </figure>
                         <figure id="pic14">
-                            <img src="images/reindeers.jpg" alt="Reindeers eating">
+                            <img src="../images/reindeers.jpg" alt="Reindeers eating">
                             <figcaption>Reindeers in Hammerfest</figcaption>
                         </figure>
                     </div>
                     <p>If you have already taken a trip that far north you should definetly also visit Nordkapp aka North Cape which is around 2 hour drive north from Hammerfest. Nordkapp is the northenmost point in Norway located at <u>70°N</u>. And if you're on your way to south make sure to stop at Alta where they have World Heritage Museum with rock carvings! Around Alta more than <strong>6000</strong> carvings have been found with earliest carving dating back to <strong>4200 BC!</strong></p>
                     <div class="pics6">
                         <figure id="pic15">
-                            <img src="images/nordkapp.jpg" alt="Nordkapp">
+                            <img src="../images/nordkapp.jpg" alt="Nordkapp">
                             <figcaption>Nordkapp in June</figcaption>
                         </figure>
                         <figure id="pic16">
-                            <img src="images/rock-carvings.jpg" alt="Rock carvings in Alta World Heritage Museum">
+                            <img src="../images/rock-carvings.jpg" alt="Rock carvings in Alta World Heritage Museum">
                             <figcaption>Rock carvings in Alta World Heritage Museum</figcaption>
                         </figure>
                     </div>
@@ -85,11 +84,11 @@
                 <!-- About me -->
                 <div class="about">
                     <h3>About the creator</h3>
-                    <img src="images/avatar.jpg" width="100px" alt="Picture of the creator">
-                    <ul>
-                        <li>Kadriliis</li>
-                        <li>Future web developer</li>
-                        <li>Co: Udacity</li>
+                    <img src="../images/avatar.jpg" class="about-pic" width="100px" alt="Picture of the creator">
+                    <ul class="list-about">
+                        <li id="name">Kadriliis</li>
+                        <li id="job">Future web developer</li>
+                        <li id="comapny">Co: Udacity</li>
                     </ul>
                     <p>Estonian living in Norway. I love travelling around and taking pictures of our amazing nature. Free spirit and introvert who cant stay in one place for too long.</p>
                 </div>
@@ -112,11 +111,11 @@
                 <!-- Social media -->
                 <div class="social">
                     <h3>Find me on:</h3>
-                    <ul>
-                        <li><a href="#"><img src="images/facebook.png" width="12px" alt="Facebook logo">Facebook</a></li>
-                        <li><a href="#"><img src="images/twitter.png" width="12px" alt="Twitter logo">Twitter</a></li>
-                        <li><a href="#"><img src="images/linkedin.png" width="12px" alt="LinkedIn logo">LinkedIn</a></li>
-                        <li><a href="https://www.instagram.com/vildsee/"><img src="images/instagram.png" width="12px" alt="Instagram logo">Instagram</a></li>
+                    <ul class="list-social">
+                        <li id="fb"><a href="#"><img src="../images/facebook.png" width="12px" alt="Facebook logo">Facebook</a></li>
+                        <li id="twitter"><a href="#"><img src="../images/twitter.png" width="12px" alt="Twitter logo">Twitter</a></li>
+                        <li id="linkedin"><a href="#"><img src="../images/linkedin.png" width="12px" alt="LinkedIn logo">LinkedIn</a></li>
+                        <li id="insta"><a href="https://www.instagram.com/vildsee/"><img src="../images/instagram.png" width="12px" alt="Instagram logo">Instagram</a></li>
                     </ul>
                 </div>
             </div>

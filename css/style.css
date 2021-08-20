@@ -1,4 +1,6 @@
 @import "media.css";
+@import "index.css";
+@import "blog-post.css";
 
 body {
     background-color: rgb(246, 245, 243);
@@ -51,7 +53,7 @@ a:hover {
     background-color: rgb(249, 242, 241);
 }
 
-.page-header h1 {
+h1 {
     margin-top: 5px;
 }
 
@@ -89,7 +91,7 @@ a:hover {
     z-index: 0;
 }
  
-.searchbar input {
+.search {
     width: 90%;
     background-color: white;
     border: none;
@@ -98,11 +100,11 @@ a:hover {
     border-radius: 4px;
 }
 
-.searchbar input::placeholder {
+.search::placeholder {
     padding-left: 5px;
 }
 
-.searchbar button {
+.submit {
     background-color: rgb(246, 245, 243);
     color: rgb(42, 61, 69,0.8);
     border: none;
@@ -111,6 +113,6 @@ a:hover {
     border-radius: 4px;
 }
 
-.searchbar button:hover {
+.submit:hover {
     cursor: pointer;
 }

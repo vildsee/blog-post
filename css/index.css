@@ -49,7 +49,7 @@ main {
     box-shadow: 1px 1px 29px 1px rgba(82,57,77,0.52);
     }
 
-.card-info h2 {
+.card-header {
     text-align: center;
     font-family: 'Windsong', cursive;
     margin: 10px 0 0 0;

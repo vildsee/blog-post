@@ -124,12 +124,12 @@ p {
     padding: 0px 10px;
 }
 
-.about img {
+.about-pic {
     border-radius: 10px;
 }
 
-.about ul,
-.social ul {
+.list-about,
+.list-social {
     list-style-type: none;
     font-style: italic;
 }
@@ -148,7 +148,7 @@ p {
     margin-bottom: 15px;
 }
 
-.subscribe input {
+.formStyle {
     padding: 5px;
     border-radius: 4px;
     border: 1px solid rgb(42, 61, 69);

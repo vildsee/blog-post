@@ -3,8 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <title>Discovering Land of the Midnight Sun</title>
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/blog-post.css">
+        <link rel="stylesheet" href="../css/style.css">
         <link href="https://fonts.googleapis.com/css2?family=WindSong&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@100&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/e544cea426.js" crossorigin="anonymous"></script>
@@ -20,7 +19,7 @@
                 <!-- Navbar -->
                 <nav class="navbar">
                     <div class="home">
-                        <a href="index.html"><i class="fas fa-home">Home</i></a>
+                        <a href="../index.html"><i class="fas fa-home">Home</i></a>
                     </div>
                     <div class="post">
                         <a href="#"><i class="fas fa-feather-alt">Blog</i></a>
@@ -28,8 +27,8 @@
                 </nav>
                 <!-- Search -->
                 <form class="searchbar">
-                    <input type="search" placeholder="Search the blog" aria-label="Search the blog">
-                    <button type="submit"><i class="fas fa-search"></i></button>
+                    <input class="search" type="search" placeholder="Search the blog" aria-label="Search the blog">
+                    <button class="submit" type="submit"><i class="fas fa-search"></i></button>
                 </form>
             </div>
             <!-- Blog post -->
@@ -40,30 +39,30 @@
                     <p>There is lot to discover in Oslo and around. In this post I am focusing more on the surroundings of Oslo, but I would like to reccomend visiting <em>Norsk Folkemuseum</em> in Oslo. It's an open air museum with different buildings, houses etc from different eras of Norway. There is also one wooden church <em>Gol Stavekirke</em> which looks amazing and smells good!</p>
                     <div class="pics1">
                         <figure id="pic1">
-                            <img src="images/old-gasstation.jpg" alt="Old gas station in Norsk Folkemuseum">
+                            <img src="../images/old-gasstation.jpg" alt="Old gas station in Norsk Folkemuseum">
                         <figcaption>Old gas-station in Norsk Folkemuseum</figcaption>
                         </figure>
                         <figure id="pic2">
-                            <img src="images/fog.jpg" alt="Foggy lake">
+                            <img src="../images/fog.jpg" alt="Foggy lake">
                             <figcaption>Foggy lake near Gardemoen</figcaption>
                         </figure>
                     </div>
                     <p>In and around Oslo there are a lot of amazing hiking trails! Norway has a freedom to roam law <em>allemannsrett</em> which means that everyone can enjoy the right of access to, and passage trough, uncultivated land in the countryside.</p>
                     <div class="pics2">
                         <figure id="pic3">
-                            <img src="images/mountaintop-lillestrom.jpg" width="350px" alt="View from the mountain to Stampetjernet lake">
+                            <img src="../images/mountaintop-lillestrom.jpg" width="350px" alt="View from the mountain to Stampetjernet lake">
                             <figcaption>View Stampetjernet lake in Lillestrøm</figcaption>
                         </figure>
                         <figure id="pic4">
-                            <img src="images/stavekirke.jpg" alt="Gol wooden church">
+                            <img src="../images/stavekirke.jpg" alt="Gol wooden church">
                             <figcaption>Gol stavekirke in Norsk Folkemuseum</figcaption>                            
                         </figure>
                         <figure id="pic5">
-                            <img src="images/icey-rocks.jpg" alt="Snow covered rocks">
+                            <img src="../images/icey-rocks.jpg" alt="Snow covered rocks">
                             <figcaption>Snowy rocks</figcaption>
                         </figure>
                         <figure id="pic6">
-                            <img src="images/mushoom.jpg" alt="Mushroom in Flateby">
+                            <img src="../images/mushoom.jpg" alt="Mushroom in Flateby">
                             <figcaption>Mushroom in Flateby</figcaption>
                         </figure>
                     </div>
@@ -79,11 +78,11 @@
                 <!-- About me -->
                 <div class="about">
                     <h3>About the creator</h3>
-                    <img src="images/avatar.jpg" width="100px" alt="Picture of the creator">
-                    <ul>
-                        <li>Kadriliis</li>
-                        <li>Future web developer</li>
-                        <li>Co: Udacity</li>
+                    <img src="../images/avatar.jpg" class="about-pic" width="100px" alt="Picture of the creator">
+                    <ul class="list-about">
+                        <li id="name">Kadriliis</li>
+                        <li id="job">Future web developer</li>
+                        <li id="company">Co: Udacity</li>
                     </ul>
                     <p>Estonian living in Norway. I love travelling around and taking pictures of our amazing nature. Free spirit and introvert who cant stay in one place for too long.</p>
                 </div>
@@ -109,11 +108,11 @@
                 <!-- Social media -->
                 <div class="social">
                     <h3>Find me on:</h3>
-                    <ul>
-                        <li><a href="#"><i class="fab fa-facebook-f">&nbspFacebook</i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter">&nbspTwitter</i></a></li>
-                        <li><a href="#"><i class="fab fa-linkedin-in">&nbspLinkedIn</i></a></li>
-                        <li><a href="https://www.instagram.com/vildsee/"><i class="fab fa-instagram">&nbspInstagram</i></a></li>
+                    <ul class="list-social">
+                        <li id="fb"><a href="#"><i class="fab fa-facebook-f">&nbspFacebook</i></a></li>
+                        <li id="twitter"><a href="#"><i class="fab fa-twitter">&nbspTwitter</i></a></li>
+                        <li id="linkedin"><a href="#"><i class="fab fa-linkedin-in">&nbspLinkedIn</i></a></li>
+                        <li id="insta"><a href="https://www.instagram.com/vildsee/"><i class="fab fa-instagram">&nbspInstagram</i></a></li>
                     </ul>
                 </div>
             </div>
